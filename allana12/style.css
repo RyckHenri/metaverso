@@ -1,13 +1,25 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+
 }
 
-header {
-    
+body {
+    width: 100vw;
+    height: 100vh;
+    color: #fff;
+    background-color: black;
+    background-image: url('bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+header {    
     width: 100vw;
     height: 100px;
-    background-color: brown;
     display: flex;
     align-items: center;
 }
@@ -17,10 +29,7 @@ div.logo {
 }
 
 div.logo img {
-    width: 30%;
-    height: 4em;
-    padding-top: 30px;
-    padding-left: 80px;
+    height: 2em;
 }
 
 nav {
@@ -30,6 +39,7 @@ nav {
 }
 
 nav a {
+    color: #fff;
     margin-right: 15px;
     text-decoration: none;
 }
@@ -40,34 +50,66 @@ nav a.HOME {
 }
 
 main {
+    width: 100vw;
     display: flex;
+    color: #fff;
 }
 
- main section.Ryam {
-    width: 50%;
+ .Ryam {
+    width: 40%; 
+    padding-left: 4rem;
+    font-size: 2rem;
+    
 }
 
 main section.Allana {
-    width: 50%;
-    height: 50em;
+    width: 60%;
+
+    display: flex;
+    justify-content: flex-end;
 }
 
-h1 {
-    width: 30vw;
-    height:15% ;
+.Allana .img1 {
+    transform: scale(1.1) translate(-30%, 2%);
 }
 
-p {
-    width: 25vw;
-    height: 10px ;
+.Allana .medias {
+    display: flex;
+    align-items: flex-end;
+    padding-right: 3.5rem;
 }
+
+.Allana .medias img{
+    width: 50px;
+    height: 50px;
+}
+
 
 input {
-    background-color: aliceblue;
+   border-radius: 3em;
+   padding: 12px;
+   cursor: pointer;
+}
+
+div.input input.bnt1 {
+    color: orangered;
+    background-color: #fff ;
+}
+
+div.input input.bnt2 {
+    color: #fff;
+    background-color: orangered;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
  img {
-    width: 50%;
-    height: 30rem;
+    height: 30rem; 
+    align-items: center;
+   
 }
 
+img.img2 {
+    
+   
+}
